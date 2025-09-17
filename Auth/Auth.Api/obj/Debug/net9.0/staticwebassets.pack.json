@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\Auth\\Auth.Api\\wwwroot\\uploads\\cej3a0k3.ir2",
+      "PackagePath": "staticwebassets\\uploads\\cej3a0k3.ir2"
+    },
+    {
+      "Id": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\Auth\\Auth.Api\\wwwroot\\uploads\\uqastv4f.l34",
+      "PackagePath": "staticwebassets\\uploads\\uqastv4f.l34"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Auth.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Auth.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Auth.Api.props",
+      "PackagePath": "build\\Auth.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Auth.Api.props",
+      "PackagePath": "buildMultiTargeting\\Auth.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Auth.Api.props",
+      "PackagePath": "buildTransitive\\Auth.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

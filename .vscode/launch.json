@@ -1,0 +1,99 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Auth.Api 5100/5101",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Auth.Api",
+            "program": "${workspaceFolder}/Auth/Auth.Api/bin/Debug/net9.0/Auth.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Auth/Auth.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "uriFormat": "%s/swagger",
+                "action": "openExternally",
+                "pattern": "Now listening on: (https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_URLS": "http://localhost:5100;https://localhost:5101"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Auth.Api 6100/6101",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Auth.Api",
+            "program": "${workspaceFolder}/Auth/Auth.Api/bin/Debug/net9.0/Auth.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Auth/Auth.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "uriFormat": "%s/swagger",
+                "action": "openExternally",
+                "pattern": "Now listening on: (https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_URLS": "http://localhost:6100;https://localhost:6101"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Demo.Api 1100/1101",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Demo.Api",
+            "program": "${workspaceFolder}/Demo/Demo.Api/bin/Debug/net9.0/Demo.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Demo/Demo.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "uriFormat": "%s/swagger",
+                "action": "openExternally",
+                "pattern": "Now listening on: (https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_URLS": "http://localhost:1100;https://localhost:1101"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "User.Api 3100/3101",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build User.Api",
+            "program": "${workspaceFolder}/User/User.Api/bin/Debug/net9.0/User.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/User/User.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "uriFormat": "%s/swagger",
+                "action": "openExternally",
+                "pattern": "Now listening on: (https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_URLS": "http://localhost:3100;https://localhost:3101"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run Both APIs",
+            "configurations": [
+                "Auth.Api 5100/5101",
+                "Demo.Api 1100/1101",
+                "User.Api 3100/3101"
+            ]
+        }
+    ]
+}

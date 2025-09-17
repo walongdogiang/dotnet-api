@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "uploads/cej3a0k3.ir2",
+      "AssetFile": "uploads/cej3a0k3.ir2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 05:03:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/cej3a0k3.ua45osj1nj.ir2",
+      "AssetFile": "uploads/cej3a0k3.ir2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 05:03:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ua45osj1nj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/cej3a0k3.ir2"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/uqastv4f.l34",
+      "AssetFile": "uploads/uqastv4f.l34",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 04:59:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/uqastv4f.ua45osj1nj.l34",
+      "AssetFile": "uploads/uqastv4f.l34",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 04:59:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ua45osj1nj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bh0UXGLoJ/YDJn92c9PvTkQFzr6bnWtPQeMtvrQtLVo="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/uqastv4f.l34"
+        }
+      ]
+    }
+  ]
+}

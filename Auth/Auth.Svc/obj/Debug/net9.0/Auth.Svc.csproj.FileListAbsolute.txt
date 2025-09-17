@@ -1,0 +1,11 @@
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\bin\Debug\net9.0\Auth.Svc.deps.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\bin\Debug\net9.0\Auth.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\bin\Debug\net9.0\Auth.Svc.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.AssemblyInfoInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.AssemblyInfo.cs
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.csproj.CoreCompileInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\refint\Auth.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\Auth.Svc.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\Auth\Auth.Svc\obj\Debug\net9.0\ref\Auth.Svc.dll
