@@ -9,3 +9,4 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Sv
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\refint\User.Svc.dll
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\ref\User.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.sourcelink.json

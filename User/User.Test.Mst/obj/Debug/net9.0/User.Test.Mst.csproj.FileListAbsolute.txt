@@ -171,3 +171,4 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\re
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\User.Test.Mst.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\User.Test.Mst.genruntimeconfig.cache
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\ref\User.Test.Mst.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\User.Test.Mst.sourcelink.json

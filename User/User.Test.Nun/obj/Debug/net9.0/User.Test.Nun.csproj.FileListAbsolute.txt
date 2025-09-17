@@ -103,3 +103,4 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Nun\obj\Debug\net9.0\re
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Nun\obj\Debug\net9.0\User.Test.Nun.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Nun\obj\Debug\net9.0\User.Test.Nun.genruntimeconfig.cache
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Nun\obj\Debug\net9.0\ref\User.Test.Nun.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Nun\obj\Debug\net9.0\User.Test.Nun.sourcelink.json

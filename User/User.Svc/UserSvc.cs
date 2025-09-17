@@ -91,7 +91,7 @@ public class UsersSvc : IUsersSvc
         existingUser.BirthDay = user.BirthDay;
         existingUser.Description = user.Description;
         existingUser.Active = user.Active;
-        return $"Update user '{user.FullName}' successfully!";
+        return null;
     }
     public List<Usr> GetByKwd(string keyword)
     {

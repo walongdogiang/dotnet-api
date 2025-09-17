@@ -102,3 +102,4 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Xut\obj\Debug\net9.0\re
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Xut\obj\Debug\net9.0\User.Test.Xut.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Xut\obj\Debug\net9.0\User.Test.Xut.genruntimeconfig.cache
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Xut\obj\Debug\net9.0\ref\User.Test.Xut.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Xut\obj\Debug\net9.0\User.Test.Xut.sourcelink.json
