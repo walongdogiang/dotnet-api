@@ -14,9 +14,9 @@ public interface IUsersSvc
 {
     List<Usr> GetAll();
     Usr? GetById(string id);
-    string Create(Usr user);
-    string DelById(string id);
-    string Update(Usr user);
+    string? Create(Usr user);
+    string? DelById(string id);
+    string? Update(Usr user);
     List<Usr> GetByKwd(string keyword);
 }
 
@@ -61,7 +61,7 @@ public class UsersSvc : IUsersSvc
         return users.FirstOrDefault(x => x.Id == id);
     }
 
-    public string Create(Usr usr)
+    public string? Create(Usr usr)
     {
         if (usr is null || string.IsNullOrWhiteSpace(usr.Id))
             return "Invalid user";
@@ -72,7 +72,7 @@ public class UsersSvc : IUsersSvc
     }
 
 
-    public string DelById(string id)
+    public string? DelById(string id)
     {
         var user = users.FirstOrDefault(x => x.Id == id);
         if (user == null)
@@ -81,7 +81,7 @@ public class UsersSvc : IUsersSvc
         return null;
     }
 
-    public string Update(Usr user)
+    public string? Update(Usr user)
     {
         var existingUser = users.FirstOrDefault(x => x.Id == user.Id);
         if (existingUser == null)

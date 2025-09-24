@@ -24,8 +24,6 @@ public sealed class NGetTests
     [TestCase("3", "Le Van C", true)]
     public void TestGetById(string id, string fullName, bool active)
     {
-        TestContext.WriteLine($"TestGetById executed at: {DateTime.Now}");
-
         var found = _svc.GetById(id);
 
         Assert.That(found, Is.Not.Null, $"User with ID '{id}' should exist.");
@@ -33,7 +31,7 @@ public sealed class NGetTests
         Assert.That(found.FullName, Is.EqualTo(fullName), $"Fullname should match with '{fullName}'.");
         Assert.That(found.Active, Is.EqualTo(active), $"Active status should match with '{active}'.");
 
-        TestContext.WriteLine($"Info: Id={found.Id} | Fullname={found.FullName} | active={found.Active}");
+        Console.WriteLine($"Info: Id={found.Id} | Fullname={found.FullName} | active={found.Active}");
     }
 
     [Test]

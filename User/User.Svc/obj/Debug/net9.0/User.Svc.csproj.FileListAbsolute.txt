@@ -10,3 +10,7 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\refint\
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\ref\User.Svc.dll
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.sourcelink.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\bin\Debug\net9.0\User.Db.MSSQL.EF.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\bin\Debug\net9.0\User.Db.MSSQL.EF.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.csproj.AssemblyReference.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Debug\net9.0\User.Svc.csproj.Up2Date

@@ -1,10 +1,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using User.Svc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using User.Db.MSSQL.EF;
+using User.Db.MSSQL.EF.Models;
+using User.Db.MSSQL.EF.Entity;
 
-namespace User.Test.Mst.Cases
+namespace User.Test.Mst.Db.MSSQL.EF.Cases
 {
     [TestClass]
     public sealed class MGetTests
@@ -13,9 +16,14 @@ namespace User.Test.Mst.Cases
         [TestInitialize]
         public void Setup()
         {
-            var services = new ServiceCollection()
-                .AddSingleton<ITimeProvider, SystemTimeProvider>()
-                .AddSingleton<IUsersSvc, UsersSvc>();
+            var services = new ServiceCollection();
+
+            // DbContext InMemory: mỗi test class 1 DB riêng bằng Guid
+            services.AddDbContext<UsrDbContext>(opt =>
+                opt.UseInMemoryDatabase($"mst-ef-{Guid.NewGuid()}"));
+
+            // Đăng ký EFUsrsSvc thay vì UsersSvc
+            services.AddSingleton<ITimeProvider, SystemTimeProvider>().AddSingleton<IUsersSvc, EFUsrsSvc>();
 
             var provider = services.BuildServiceProvider();
             _svc = provider.GetRequiredService<IUsersSvc>();
@@ -43,8 +51,8 @@ namespace User.Test.Mst.Cases
         public void TestGetAllUser()
         {
             var countUsers = _svc.GetAll().Count;
-            _svc.Create(new Usr { Id = "10", FullName = "Jully", Active = true });
-            _svc.Create(new Usr { Id = "11", FullName = "October", Active = false });
+            _svc.Create(new UsrEtt { Id = "10", FullName = "Jully", Active = true });
+            _svc.Create(new UsrEtt { Id = "11", FullName = "October", Active = false });
 
             Console.WriteLine("TestGetAllUser");
 

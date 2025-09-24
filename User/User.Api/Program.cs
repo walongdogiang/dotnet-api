@@ -1,9 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
+using User.Db.MSSQL.EF;
 using User.Svc;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<UsrDbContext>(opt =>
+    opt.UseSqlServer(
+        builder.Configuration.GetConnectionString("Default"),
+        b => b.MigrationsAssembly("User.Db.MSSQL.EF") // muốn lưu migrations trong lib
+    )
+);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ITimeProvider, SystemTimeProvider>();

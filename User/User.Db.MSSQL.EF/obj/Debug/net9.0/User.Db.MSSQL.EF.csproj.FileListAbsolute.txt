@@ -1,0 +1,15 @@
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Db.MSSQL.EF.deps.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Db.MSSQL.EF.runtimeconfig.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Db.MSSQL.EF.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Db.MSSQL.EF.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.csproj.AssemblyReference.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.AssemblyInfoInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.AssemblyInfo.cs
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.csproj.CoreCompileInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.sourcelink.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\refint\User.Db.MSSQL.EF.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.genruntimeconfig.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\ref\User.Db.MSSQL.EF.dll
