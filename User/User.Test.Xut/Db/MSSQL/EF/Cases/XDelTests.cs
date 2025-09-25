@@ -6,6 +6,7 @@ using Xunit;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
 using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Xut.Db.MSSQL.EF.Cases
 {
@@ -34,7 +35,7 @@ namespace User.Test.Xut.Db.MSSQL.EF.Cases
         [InlineData("d02")]
         public void Delete_ExistingUser_Succeeds(string id)
         {
-            var newUser = new UsrEtt { Id = id, FullName = "Temp", Active = true };
+            var newUser = new Usr { Id = id, FullName = "Temp", Active = true };
             Assert.Null(_svc.Create(newUser));
             var countBefore = _svc.GetAll().Count;
 
@@ -61,9 +62,9 @@ namespace User.Test.Xut.Db.MSSQL.EF.Cases
         {
             if (_svc.GetAll().Count == 0)
             {
-                _svc.Create(new UsrEtt { Id = "a1", FullName = "A", Active = true });
-                _svc.Create(new UsrEtt { Id = "a2", FullName = "B", Active = true });
-                _svc.Create(new UsrEtt { Id = "a3", FullName = "C", Active = true });
+                _svc.Create(new Usr { Id = "a1", FullName = "A", Active = true });
+                _svc.Create(new Usr { Id = "a2", FullName = "B", Active = true });
+                _svc.Create(new Usr { Id = "a3", FullName = "C", Active = true });
             }
 
             var list = _svc.GetAll();

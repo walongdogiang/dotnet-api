@@ -15,6 +15,7 @@
           "NUnit": "4.2.2",
           "NUnit.Analyzers": "4.3.0",
           "NUnit3TestAdapter": "4.6.0",
+          "User.Db.MSSQL.EF": "1.0.0",
           "User.Svc": "1.0.0",
           "coverlet.collector": "6.0.2"
         },
@@ -895,7 +896,8 @@
       "User.Db.MSSQL.EF/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
+          "User.Svc": "1.0.0"
         },
         "runtime": {
           "User.Db.MSSQL.EF.dll": {
@@ -905,9 +907,6 @@
         }
       },
       "User.Svc/1.0.0": {
-        "dependencies": {
-          "User.Db.MSSQL.EF": "1.0.0"
-        },
         "runtime": {
           "User.Svc.dll": {
             "assemblyVersion": "1.0.0",

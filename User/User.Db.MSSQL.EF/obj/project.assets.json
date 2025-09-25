@@ -1598,6 +1598,16 @@
             "rid": "win"
           }
         }
+      },
+      "User.Svc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/User.Svc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/User.Svc.dll": {}
+        }
       }
     }
   },
@@ -4701,13 +4711,19 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "User.Svc/1.0.0": {
+      "type": "project",
+      "path": "../User.Svc/User.Svc.csproj",
+      "msbuildProject": "../User.Svc/User.Svc.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.9",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.9"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.9",
+      "User.Svc >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4741,7 +4757,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj": {
+              "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

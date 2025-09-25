@@ -1103,7 +1103,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
+          "User.Svc": "1.0.0"
         },
         "compile": {
           "bin/placeholder/User.Db.MSSQL.EF.dll": {}
@@ -1115,9 +1116,6 @@
       "User.Svc/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "User.Db.MSSQL.EF": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/User.Svc.dll": {}
         },

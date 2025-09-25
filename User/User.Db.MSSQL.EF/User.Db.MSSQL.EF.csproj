@@ -15,8 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
-  <!-- <ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\User.Svc\User.Svc.csproj" />
-  </ItemGroup> -->
+  </ItemGroup>
 
 </Project>

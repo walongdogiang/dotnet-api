@@ -13,3 +13,6 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db.MSSQL.EF.genruntimeconfig.cache
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\ref\User.Db.MSSQL.EF.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\bin\Debug\net9.0\User.Svc.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Db.MSSQL.EF\obj\Debug\net9.0\User.Db..76CD3AD8.Up2Date

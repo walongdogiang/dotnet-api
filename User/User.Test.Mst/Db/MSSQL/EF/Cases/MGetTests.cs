@@ -1,8 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using User.Svc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using User.Db.MSSQL.EF;
+using User.Db.MSSQL.EF.Models;
+using User.Svc;
 
 namespace User.Test.Mst.Cases
 {
@@ -13,9 +16,14 @@ namespace User.Test.Mst.Cases
         [TestInitialize]
         public void Setup()
         {
-            var services = new ServiceCollection()
-                .AddSingleton<ITimeProvider, SystemTimeProvider>()
-                .AddSingleton<IUsersSvc, UsersSvc>();
+            var services = new ServiceCollection();
+
+            // DbContext InMemory: mỗi test class 1 DB riêng bằng Guid
+            services.AddDbContext<UsrDbContext>(opt =>
+                opt.UseInMemoryDatabase($"mst-ef-{Guid.NewGuid()}"));
+
+            // Đăng ký EFUsrsSvc thay vì UsersSvc
+            services.AddSingleton<ITimeProvider, SystemTimeProvider>().AddSingleton<IUsersSvc, EFUsrsSvc>();
 
             var provider = services.BuildServiceProvider();
             _svc = provider.GetRequiredService<IUsersSvc>();

@@ -25,5 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\User.Svc\User.Svc.csproj" />
+    <ProjectReference Include="..\User.Db.MSSQL.EF\User.Db.MSSQL.EF.csproj" />
   </ItemGroup>
 </Project>

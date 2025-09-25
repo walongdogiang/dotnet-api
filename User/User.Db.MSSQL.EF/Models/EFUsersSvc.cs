@@ -1,95 +1,109 @@
+using Microsoft.EntityFrameworkCore;
+using User.Svc;                    // IUsersSvc, Usr (model trả ra ngoài)
+using User.Db.MSSQL.EF.Entity;     // UsrEtt (entity)
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using User.Db.MSSQL.EF.Entity;
 
 namespace User.Db.MSSQL.EF.Models
 {
-    public interface IUsersSvc
-    {
-        List<UsrEtt> GetAll();
-        UsrEtt? GetById(string id);
-        string? Create(UsrEtt user);
-        string? DelById(string id);
-        string? Update(UsrEtt user);
-        List<UsrEtt> GetByKwd(string keyword);
-    }
-    public class EFUsrsSvc : IUsersSvc
+    // EF implement interface OUTPUT chung: IUsersSvc (trả Usr)
+    public sealed class EFUsrsSvc : IUsersSvc
     {
         private readonly UsrDbContext _db;
-        public EFUsrsSvc(UsrDbContext db)
+        public EFUsrsSvc(UsrDbContext db) => _db = db;
+
+        // ====== Helpers map Entity <-> Model ======
+        private static Usr ToModel(UsrEtt e) => new Usr
         {
-            _db = db;
+            Id = e.Id,
+            FullName = e.FullName,
+            Address = e.Address,
+            BirthDay = e.BirthDay,
+            Description = e.Description,
+            Active = e.Active
+        };
+
+        private static UsrEtt ToEntity(Usr m) => new UsrEtt
+        {
+            Id = m.Id,
+            FullName = m.FullName,
+            Address = m.Address,
+            BirthDay = m.BirthDay,
+            Description = m.Description,
+            Active = m.Active
+        };
+
+        private static void Apply(Usr m, UsrEtt e)
+        {
+            e.FullName = m.FullName;
+            e.Address  = m.Address;
+            e.BirthDay = m.BirthDay;
+            e.Description = m.Description;
+            e.Active   = m.Active;
         }
 
-        public List<UsrEtt> GetAll()
+        // ================= CRUD ===================
+
+        public List<Usr> GetAll()
         {
-            return _db.Users.ToList();
+            return _db.Users
+                      .AsNoTracking()
+                      .Select(e => ToModel(e))
+                      .ToList();
         }
 
-        public UsrEtt? GetById(string id)
+        public Usr? GetById(string id)
         {
-            var user = _db.Users.Find(id);
-            return user;
+            var e = _db.Users.AsNoTracking().FirstOrDefault(x => x.Id == id);
+            return e is null ? null : ToModel(e);
         }
 
-        public string? Create(UsrEtt usr)
+        public string? Create(Usr usr)
         {
             if (usr is null || string.IsNullOrWhiteSpace(usr.Id) || string.IsNullOrWhiteSpace(usr.FullName))
                 return "Invalid user";
-            if (_db.Users.Any(x => x.Id == usr.Id))
-                return "User already exists";
 
-            var userEntity = new UsrEtt
-            {
-                Id = usr.Id,
-                FullName = usr.FullName,
-                Address = usr.Address,
-                BirthDay = usr.BirthDay,
-                Description = usr.Description,
-                Active = usr.Active
-            };
+            var exists = _db.Users.Any(x => x.Id == usr.Id);
+            if (exists) return "User already exists";
 
-            _db.Users.Add(userEntity);
+            _db.Users.Add(ToEntity(usr));
             _db.SaveChanges();
             return null;
         }
 
         public string? DelById(string id)
         {
-            var user = _db.Users.Find(id);
-            if (user == null)
-                return "User not found";
-            _db.Users.Remove(user);
+            var e = _db.Users.Find(id);
+            if (e is null) return "User not found";
+
+            _db.Users.Remove(e);
             _db.SaveChanges();
             return null;
         }
 
-        public string? Update(UsrEtt usr)
+        public string? Update(Usr user)
         {
-            if (usr is null || string.IsNullOrWhiteSpace(usr.Id))
+            if (user is null || string.IsNullOrWhiteSpace(user.Id))
                 return "Invalid user";
-            var existingUser = _db.Users.Find(usr.Id);
-            if (existingUser == null)
-                return "User not found";
 
-            existingUser.FullName = usr.FullName;
-            existingUser.Address = usr.Address;
-            existingUser.BirthDay = usr.BirthDay;
-            existingUser.Description = usr.Description;
-            existingUser.Active = usr.Active;
+            var e = _db.Users.Find(user.Id);
+            if (e is null) return "User not found";
 
+            Apply(user, e);
             _db.SaveChanges();
             return null;
         }
 
-        public List<UsrEtt> GetByKwd(string keyword)
+        public List<Usr> GetByKwd(string keyword)
         {
-            var matches = _db.Users
-                .Where(x => x.FullName.Contains(keyword))
-                .ToList();
-            return matches;
+            if (string.IsNullOrWhiteSpace(keyword))
+                return new List<Usr>();
+            return _db.Users
+                      .AsNoTracking()
+                      .Where(x => x.FullName.Contains(keyword))
+                      .Select(e => ToModel(e))
+                      .ToList();
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
 using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Nun.Db.MSSQL.EF.Cases
 {
@@ -36,7 +37,7 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
         [TestCase("d02")]
         public void Delete_ExistingUser_Succeeds(string id)
         {
-            var newUser = new UsrEtt { Id = id, FullName = "Temp", Active = true };
+            var newUser = new Usr { Id = id, FullName = "Temp", Active = true };
             Assert.That(_svc.Create(newUser), Is.Null, "New user should be created without error.");
             var countBefore = _svc.GetAll().Count;
 
@@ -64,9 +65,9 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
             // Arrange: seed vài user nếu rỗng
             if (_svc.GetAll().Count == 0)
             {
-                _svc.Create(new UsrEtt { Id = "a1", FullName = "A", Active = true });
-                _svc.Create(new UsrEtt { Id = "a2", FullName = "B", Active = true });
-                _svc.Create(new UsrEtt { Id = "a3", FullName = "C", Active = true });
+                _svc.Create(new Usr { Id = "a1", FullName = "A", Active = true });
+                _svc.Create(new Usr { Id = "a2", FullName = "B", Active = true });
+                _svc.Create(new Usr { Id = "a3", FullName = "C", Active = true });
             }
 
             var list = _svc.GetAll();

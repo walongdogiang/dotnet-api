@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
 using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Mst.Db.MSSQL.EF.Cases;
 
@@ -38,7 +39,7 @@ public sealed class MPutTests
         // Seed nếu chưa có
         if (_svc.GetById(id) == null)
         {
-            var seedMsg = _svc.Create(new UsrEtt
+            var seedMsg = _svc.Create(new Usr
             {
                 Id = id, FullName = "Seed Name", Address = "Seed Addr",
                 BirthDay = new DateTime(1980, 1, 1), Description = "Seed Desc", Active = !active
@@ -49,7 +50,7 @@ public sealed class MPutTests
         var before = _svc.GetAll().Count;
 
         // Act
-        var msg = _svc.Update(new UsrEtt
+        var msg = _svc.Update(new Usr
         {
             Id = id,
             FullName = fullName,
@@ -82,14 +83,14 @@ public sealed class MPutTests
     {
         const string id = "u100";
         _svc.DelById(id); // reset
-        var created = _svc.Create(new UsrEtt
+        var created = _svc.Create(new Usr
         {
             Id = id, FullName = "Old Name", Address = "Old Addr",
             BirthDay = new DateTime(1999, 9, 9), Description = "Old Desc", Active = false
         });
         Assert.IsTrue(string.IsNullOrEmpty(created));
 
-        var msg = _svc.Update(new UsrEtt
+        var msg = _svc.Update(new Usr
         {
             Id = id,
             FullName = "New Name",
@@ -117,7 +118,7 @@ public sealed class MPutTests
         _svc.DelById(id);
         var before = _svc.GetAll().Count;
 
-        var msg = _svc.Update(new UsrEtt
+        var msg = _svc.Update(new Usr
         {
             Id = id,
             FullName = "Ghost",

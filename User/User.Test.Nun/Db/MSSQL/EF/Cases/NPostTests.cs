@@ -5,6 +5,7 @@ using NUnit.Framework;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
 using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Nun.Db.MSSQL.EF.Cases
 {
@@ -37,7 +38,7 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
         {
             var countBefore = _svc.GetAll().Count;
 
-            var msg = _svc.Create(new UsrEtt {
+            var msg = _svc.Create(new Usr {
                 Id = id,
                 FullName = fullName,
                 Address = address,
@@ -63,12 +64,12 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
         public void Create_DuplicateId_ReturnsError_And_NotChangeCount()
         {
             var id = "dup01";
-            var newUsr = new UsrEtt { Id = id, FullName = "Vu Hieu 1", Active = true };
+            var newUsr = new Usr { Id = id, FullName = "Vu Hieu 1", Active = true };
             var msg = _svc.Create(newUsr);
             Assert.That(msg, Is.Null, "First create should succeed.");
 
             var count = _svc.GetAll().Count;
-            var msg2 = _svc.Create(new UsrEtt { Id = id, FullName = "Vu Hieu 2", Active = false });
+            var msg2 = _svc.Create(new Usr { Id = id, FullName = "Vu Hieu 2", Active = false });
 
             Assert.That(msg2, Is.Not.Null, "Second create with duplicate ID should return error message.");
             Assert.That(_svc.GetAll().Count, Is.EqualTo(count), "User count should not change.");

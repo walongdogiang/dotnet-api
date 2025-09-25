@@ -1357,7 +1357,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
+          "User.Svc": "1.0.0"
         },
         "compile": {
           "bin/placeholder/User.Db.MSSQL.EF.dll": {}
@@ -1369,9 +1370,6 @@
       "User.Svc/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "User.Db.MSSQL.EF": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/User.Svc.dll": {}
         },
@@ -3608,6 +3606,7 @@
       "NUnit >= 4.2.2",
       "NUnit.Analyzers >= 4.3.0",
       "NUnit3TestAdapter >= 4.6.0",
+      "User.Db.MSSQL.EF >= 1.0.0",
       "User.Svc >= 1.0.0",
       "coverlet.collector >= 6.0.2"
     ]
@@ -3644,6 +3643,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
+              "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj"
+            },
             "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj": {
               "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj"
             }

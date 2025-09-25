@@ -5,6 +5,7 @@ using NUnit.Framework;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
 using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Nun.Db.MSSQL.EF.Cases
 {
@@ -39,7 +40,7 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
             // Seed nếu chưa có
             if (_svc.GetById(id) == null)
             {
-                var seedMsg = _svc.Create(new UsrEtt
+                var seedMsg = _svc.Create(new Usr
                 {
                     Id = id,
                     FullName = "Seed Name",
@@ -53,7 +54,7 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
 
             var before = _svc.GetAll().Count;
 
-            var msg = _svc.Update(new UsrEtt
+            var msg = _svc.Update(new Usr
             {
                 Id = id,
                 FullName = fullName,
@@ -84,14 +85,14 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
         {
             const string id = "u100";
             _svc.DelById(id); // reset
-            var created = _svc.Create(new UsrEtt
+            var created = _svc.Create(new Usr
             {
                 Id = id, FullName = "Old Name", Address = "Old Addr",
                 BirthDay = new DateTime(1999, 9, 9), Description = "Old Desc", Active = false
             });
             Assert.That(string.IsNullOrEmpty(created), Is.True);
 
-            var msg = _svc.Update(new UsrEtt
+            var msg = _svc.Update(new Usr
             {
                 Id = id,
                 FullName = "New Name",
@@ -118,7 +119,7 @@ namespace User.Test.Nun.Db.MSSQL.EF.Cases
             _svc.DelById(id);
             var before = _svc.GetAll().Count;
 
-            var msg = _svc.Update(new UsrEtt
+            var msg = _svc.Update(new Usr
             {
                 Id = id,
                 FullName = "Ghost",

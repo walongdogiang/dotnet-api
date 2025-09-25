@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using User.Db.MSSQL.EF;
 using User.Db.MSSQL.EF.Models;
-using User.Db.MSSQL.EF.Entity;
+using User.Svc;
 
 namespace User.Test.Mst.Db.MSSQL.EF.Cases
 {
@@ -38,7 +38,7 @@ namespace User.Test.Mst.Db.MSSQL.EF.Cases
         {
             var countBefore = _svc.GetAll().Count;
 
-            var msg = _svc.Create(new UsrEtt { Id = id, FullName = fullName, Address = address, BirthDay = DateTime.Parse(birthDay), Description = description, Active = active });
+            var msg = _svc.Create(new Usr { Id = id, FullName = fullName, Address = address, BirthDay = DateTime.Parse(birthDay), Description = description, Active = active });
             var countAfter = _svc.GetAll().Count;
             Assert.IsNull(msg, "Create should return null on success.");
 
@@ -57,12 +57,12 @@ namespace User.Test.Mst.Db.MSSQL.EF.Cases
         public void TestCreate_Duplicate()
         {
             var id = "dup01";
-            var newUsr = new UsrEtt { Id = id, FullName = "Vu Hieu 1", Active = true };
+            var newUsr = new Usr { Id = id, FullName = "Vu Hieu 1", Active = true };
             var msg = _svc.Create(newUsr);
             Assert.IsNull(msg, "First create should succeed.");
 
             var count = _svc.GetAll().Count;
-            var msg2 = _svc.Create(new UsrEtt { Id = id, FullName = "Vu Hieu 2", Active = false });
+            var msg2 = _svc.Create(new Usr { Id = id, FullName = "Vu Hieu 2", Active = false });
 
             Assert.IsNotNull(msg2, "Second create with duplicate ID should return error message.");
             Assert.AreEqual(count, _svc.GetAll().Count);
