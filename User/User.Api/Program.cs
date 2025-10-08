@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using User.Db.MSSQL.EF;
-using User.Db.MSSQL.EF.Models;
+using User.Db.MSSQL.EF.DB;
 using User.Svc;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +23,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<ITimeProvider, SystemTimeProvider>();
-builder.Services.AddScoped<IUsersSvc, EFUsrsSvc>();
+// builder.Services.AddScoped<IUsersSvc, EFUsrsSvc>(); //Entity Connection
+builder.Services.AddSingleton<IDbConnectionFactory>(_ => new SqlConnectionFactory(cs)); // Dapper Connection
+builder.Services.AddScoped<IUsersSvc, DpUsersSvc>(); // Dapper Connection
 
 var app = builder.Build();
 

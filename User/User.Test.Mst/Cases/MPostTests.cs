@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using User.Svc;
 using Microsoft.Extensions.DependencyInjection;
+using User.Svc;
 
 namespace User.Test.Mst.Cases
 {
