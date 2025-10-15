@@ -1,0 +1,5 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore --nodeReuse:false /p:UseSharedCompilation=false /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Benchmarks-DefaultJob-1/" /p:OutDir="C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Benchmarks-DefaultJob-1\bin\Release\net9.0/" /p:OutputPath="C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Benchmarks-DefaultJob-1\bin\Release\net9.0/" /p:PublishDir="C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Benchmarks-DefaultJob-1\publish/" in C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Benchmarks-DefaultJob-1

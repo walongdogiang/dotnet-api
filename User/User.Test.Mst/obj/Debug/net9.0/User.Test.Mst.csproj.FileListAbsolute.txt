@@ -242,3 +242,4 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\bin\Debug\net9.0\ru
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.Messages.dll
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Test.Mst\obj\Debug\net9.0\MvcTestingAppManifest.json

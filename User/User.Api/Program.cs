@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ITimeProvider, SystemTimeProvider>();
 // builder.Services.AddScoped<IUsersSvc, EFUsrsSvc>(); //Entity Connection
 builder.Services.AddSingleton<IDbConnectionFactory>(_ => new SqlConnectionFactory(cs)); // Dapper Connection
-builder.Services.AddScoped<IUsersSvc, DpUsersSvc>(); // Dapper Connection
+builder.Services.AddScoped<IUsersSvc, DpUsrsSvc>(); // Dapper Connection
 
 var app = builder.Build();
 

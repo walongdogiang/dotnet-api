@@ -22,8 +22,9 @@ public sealed class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<Usr
     {
         // Load configuration from appsettings.json and User Secrets
         var configuration = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory()) // Current directory for appsettings.json
+            .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "..", "User.Api")) // Look in User.Api project
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true) // Add appsettings.json
+            .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true) // Add appsettings.Development.json
             .AddUserSecrets<DesignTimeDbContextFactory>(optional: true) // Add User Secrets
             .AddEnvironmentVariables() // Add environment variables
             .Build();

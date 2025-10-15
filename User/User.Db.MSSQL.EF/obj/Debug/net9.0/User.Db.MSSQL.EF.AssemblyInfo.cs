@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("User.Db.MSSQL.EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9bd631610b27820b77279b228e62d1490ef2e0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5538481f0eac9420e9cfd4911dccc6a20a98537c")]
 [assembly: System.Reflection.AssemblyProductAttribute("User.Db.MSSQL.EF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("User.Db.MSSQL.EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

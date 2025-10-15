@@ -1,0 +1,12 @@
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\bin\Release\net9.0\User.Svc.deps.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\bin\Release\net9.0\User.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\bin\Release\net9.0\User.Svc.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.AssemblyInfoInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.AssemblyInfo.cs
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.csproj.CoreCompileInputs.cache
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.sourcelink.json
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\refint\User.Svc.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\User.Svc.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Svc\obj\Release\net9.0\ref\User.Svc.dll

@@ -1,0 +1,5 @@
+{
+  "User.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Api",
+  "User.Db.MSSQL.EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF",
+  "User.Svc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc"
+}
