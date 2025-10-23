@@ -4816,8 +4816,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
-              "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj"
+            "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
+              "projectPath": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj"
             },
             "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj": {
               "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj"

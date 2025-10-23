@@ -145,3 +145,5 @@ C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Svc.dll
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Svc.pdb
 C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Db.MSSQL.EF.pdb
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Svc.Aio.dll
+C:\Users\Silence\Desktop\dotnet-thay-nhan\User\User.Benchmarks\bin\Release\net9.0\User.Svc.Aio.pdb

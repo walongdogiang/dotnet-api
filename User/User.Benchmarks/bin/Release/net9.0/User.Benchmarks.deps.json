@@ -11,7 +11,8 @@
           "BenchmarkDotNet": "0.15.4",
           "Microsoft.Extensions.Configuration.Json": "9.0.9",
           "User.Db.MSSQL.EF": "1.0.0",
-          "User.Svc": "1.0.0"
+          "User.Svc": "1.0.0",
+          "User.Svc.Aio": "1.0.0"
         },
         "runtime": {
           "User.Benchmarks.dll": {}
@@ -970,6 +971,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "User.Svc.Aio/1.0.0": {
+        "dependencies": {
+          "User.Db.MSSQL.EF": "1.0.0",
+          "User.Svc": "1.0.0"
+        },
+        "runtime": {
+          "User.Svc.Aio.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1489,6 +1502,11 @@
       "sha512": ""
     },
     "User.Svc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "User.Svc.Aio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

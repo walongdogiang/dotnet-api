@@ -4,14 +4,14 @@
     "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Test.Nun\\User.Test.Nun.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
+    "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj",
+        "projectUniqueName": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj",
         "projectName": "User.Db.MSSQL.EF",
-        "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj",
+        "projectPath": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj",
         "packagesPath": "C:\\Users\\Silence\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\obj\\",
+        "outputPath": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -208,8 +208,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
-                "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj"
+              "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj": {
+                "projectPath": "c:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Db.MSSQL.EF\\User.Db.MSSQL.EF.csproj"
               },
               "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj": {
                 "projectPath": "C:\\Users\\Silence\\Desktop\\dotnet-thay-nhan\\User\\User.Svc\\User.Svc.csproj"

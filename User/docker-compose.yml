@@ -1,18 +1,12 @@
-version: '3.8'
-
+version: '3.9'
 services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: user-sqlserver
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong@Passw0rd
-      - MSSQL_PID=Express
+  redis:
+    image: redis:latest
+    container_name: vsc-redis
     ports:
-      - "1433:1433"
+      - "6380:6380"
     volumes:
-      - sqlserver_data:/var/opt/mssql
-    restart: unless-stopped
-
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
 volumes:
-  sqlserver_data:
+  redis_data:
